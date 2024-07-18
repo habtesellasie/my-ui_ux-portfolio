@@ -1,20 +1,16 @@
 import Image from 'next/image';
+import Hero from './components/Hero';
+import Navbar from './components/Navbar';
 
 export default function Home() {
   return (
     <>
-      <section>
-        <Image
-          src='/hero-img-transparent Large.png'
-          priority
-          width={200}
-          height={500}
-          alt='hero image'
-          className=''
-        />
-        <p>what is going on</p>
-      </section>
-      <section></section>
+      <div className='max-w-4xl mx-auto flex'>
+        <Navbar />
+        <section className='mt-4'>
+          <Hero />
+        </section>
+      </div>
     </>
   );
 }

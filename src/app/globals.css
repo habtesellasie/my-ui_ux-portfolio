@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --font-playfair: 'Playfair Display', sans-serif;
+  --font-dm-sans: 'DM Sans', sans-serif;
+}
+
+.font-playfair {
+  font-family: var(--font-playfair);
+}
+
+.font-dm-sans {
+  font-family: var(--font-dm-sans);
+}
