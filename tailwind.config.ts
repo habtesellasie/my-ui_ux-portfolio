@@ -16,6 +16,9 @@ const config: Config = {
         dmSans: ['DM Sans'],
         playFair: ['Playfair Display'],
       },
+      screens: {
+        small: '32.875em',
+      },
     },
   },
   plugins: [],
