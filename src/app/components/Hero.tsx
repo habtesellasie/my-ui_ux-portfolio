@@ -36,7 +36,7 @@ const Hero = () => {
               <span className='text-[#ea4335]'>e</span>
             </span>
             , <span className='text-[#0081FB] font-medium'>Meta</span>, and{' '}
-            <span className='text-[#0530AD] font-medium'>IBM</span>, I bring a
+            <span className='text-[#0f62fe] font-medium'>IBM</span>, I bring a
             blend of creativity and technical expertise to every project. My
             experience in Frontend development further enhances my ability to
             understand and address developer challenges.

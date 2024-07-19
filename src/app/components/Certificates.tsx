@@ -43,6 +43,9 @@ const Certificates = () => {
                 <h3 className='font-bold inline-block lg:max-w-[240px] w-full'>
                   {certificate.name}
                 </h3>
+                <span className='text-md text-gray-600'>
+                  By {certificate.instructor}
+                </span>
 
                 <Link
                   href={certificate.verification_link}

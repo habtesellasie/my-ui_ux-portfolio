@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Playfair_Display, DM_Sans } from 'next/font/google';
 import './globals.css';
-import Head from 'next/head';
 
 const playfairDisplay = Playfair_Display({ subsets: ['latin'] });
 const dmSans = DM_Sans({ subsets: ['latin'] });
@@ -19,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <Head>
+      <head>
         <link
           rel='apple-touch-icon'
           sizes='180x180'
@@ -62,7 +61,7 @@ export default function RootLayout({
           name='description'
           content='Explore the portfolio of Habtesellasie Fissha, a UI/UX designer with a blend of creativity and technical expertise. Discover intuitive and engaging user experiences crafted with certifications from industry leaders such as Google, Meta, IBM, and Scrimba.'
         />
-      </Head>
+      </head>
       <body className={`${playfairDisplay.className} ${dmSans.className}`}>
         {children}
       </body>
