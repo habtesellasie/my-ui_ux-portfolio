@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
+import Certificates from './components/Certificates';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <main className='mx-4 mt-4'>
           <section>
             <Hero />
+            <Certificates />
             <Projects />
           </section>
         </main>

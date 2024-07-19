@@ -93,3 +93,39 @@ export const projects = [
     used_things: ['UI', 'UX', 'Prototype', 'HI-FI', 'Figma', 'Mobile Design'],
   },
 ];
+
+export const certificates = [
+  {
+    name: 'Google UX Design',
+    by: 'Google',
+    verification_link:
+      'https://coursera.org/verify/professional-cert/4MSYH4QNLDAB',
+    image: '/certificates/google-ux-design.png',
+  },
+  {
+    name: 'Principles of UX/UI Design',
+    by: 'Meta',
+    verification_link: 'https://coursera.org/verify/PYSPGFZMXXDL',
+    image: '/certificates/meta-ui_ux-design.png',
+  },
+  {
+    name: 'Designing User Interfaces & Experiences (UI/UX)',
+    by: 'IBM',
+    verification_link: 'https://coursera.org/verify/ARFF8LVV7XTF',
+    image: '/certificates/ibm-ui_ux-design.png',
+  },
+  {
+    name: 'Learn UI Design',
+    by: 'Scrimba',
+    verification_link:
+      'https://scrimba.com/certificate/uB5B7DSx/gdesignbootcamp',
+    image: '/certificates/scrimba-ui-design.png',
+  },
+  {
+    name: 'IBM Front-End Developer',
+    by: 'IBM',
+    verification_link:
+      'https://coursera.org/verify/professional-cert/CU2LECUJTT7G',
+    image: '/certificates/ibm-front-end-development.png',
+  },
+];

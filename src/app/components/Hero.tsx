@@ -27,11 +27,21 @@ const Hero = () => {
           <h2 className='mb-4 font-bold'>Welcome to My UI/UX Portfolio</h2>
           <p className='text-gray-500 text-pretty'>
             I&apos;m a UI/UX designer dedicated to creating intuitive and
-            engaging user experiences. With a Google Professional UX Design
-            Certification and experience in Frontend development, I bring a
-            blend of creativity and technical expertise to every project. This
-            unique combination makes me the perfect fit to understand and
-            address developer challenges.
+            engaging user experiences. With certifications from industry leaders
+            such as{' '}
+            <p className='inline-block font-medium'>
+              <span className='text-[#4285f4]'>G</span>
+              <span className='text-[#ea4335]'>o</span>
+              <span className='text-[#fbbc04]'>o</span>
+              <span className='text-[#4285f4]'>g</span>
+              <span className='text-[#34a853]'>l</span>
+              <span className='text-[#ea4335]'>e</span>
+            </p>
+            , <span className='text-[#0081FB] font-medium'>Meta</span>, and{' '}
+            <span className='text-[#0530AD] font-medium'>IBM</span>, I bring a
+            blend of creativity and technical expertise to every project. My
+            experience in Frontend development further enhances my ability to
+            understand and address developer challenges.
             <span className='inline-block pt-2 text-pretty'>
               Explore my portfolio to see how I transform ideas into visually
               appealing and user friendly designs.

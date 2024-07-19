@@ -14,3 +14,17 @@
 .font-dm-sans {
   font-family: var(--font-dm-sans);
 }
+
+.google-logo {
+  background: linear-gradient(
+    to right,
+    #4285f4,
+    #ea4335,
+    #fbbc04,
+    #4285f4,
+    #34a853,
+    #ea4335
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
