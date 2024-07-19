@@ -1,3 +1,18 @@
+export const siteConfig = {
+  name: 'Habte',
+  url: 'https://habfis.netlify.app',
+  description: 'Portfolio website using velite, tailwind and shadcn',
+  author: 'Habtesellasie Fissha',
+  links: {
+    twitter: 'https://twitter.com/havecodesoft',
+    linkedin: 'https://linkedin.com/in/habtesellasie',
+    github: 'https://github.com/habtesellasie',
+    upwork:
+      'https://www.upwork.com/freelancers/~017dc4aca6746437e4?mp_source=share',
+    fiverr: 'https://www.fiverr.com/s/8b62Bo',
+  },
+};
+
 export const projects = [
   {
     name: 'Donkey Tube',
@@ -132,14 +147,42 @@ export const certificates = [
 
 export const skills = [
   {
-    softSkill: [
-      'User Interface',
-      'User Experience',
+    ui_ux_skills: [
+      'User Interface (UI)',
+      'User Experience (UX)',
       'Hi-Fi',
       'Lo-Fi',
       'Prototyping',
       'Wireframing',
       'User Research',
+      'Responsive Design',
+      'Mockups',
+      'User Interface Design (UID)',
+      'User Experience Design (UXD)',
+      'Usability Testing',
+      'Interaction Design',
+      'Information Architecture',
+      'Visual Design',
+      'Accessibility',
+      'Design Systems',
+      'Typography',
+      'Color Theory',
+      'Motion Design',
+      'User Flows',
+      'Journey Mapping',
+      'Heuristic Evaluation',
+      'Persona Development',
+      'Content Strategy',
+      'A/B Testing',
+      'Design Thinking',
+      '. . .',
+    ],
+    softwareSkills: [
+      'Figma',
+      'Adobe Illustrator',
+      'Adobe Premiere Pro',
+      'Canva',
+      'Adobe Photoshop',
     ],
   },
 ];

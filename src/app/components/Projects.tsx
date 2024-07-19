@@ -11,7 +11,7 @@ const Projects = () => {
       </h2>
       {projects.map((project, projectIndex) => {
         return (
-          <div key={projectIndex} className='mb-6'>
+          <div key={projectIndex} className='mb-4'>
             <h3 className='text-xl font-bold inline-block w-full bg-white sticky top-[2.9375rem] pt-2 pb-4'>
               {project.name}
             </h3>
