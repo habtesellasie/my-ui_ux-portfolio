@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <section>
       <h2 className='text-2xl font-bold mt-4 sticky z-50 top-0 py-2 bg-white'>
-        Projects
+        My Works
       </h2>
       {projects.map((project, projectIndex) => {
         return (
@@ -31,7 +31,7 @@ const Projects = () => {
                 return (
                   <div
                     key={index}
-                    className='bg-black/60 text-sm text-white px-4 py-1 rounded'
+                    className='bg-zinc-200 hover:bg-zinc-300 transition cursor-pointer text-sm text-black px-4 py-1 rounded'
                   >
                     {thing}
                   </div>

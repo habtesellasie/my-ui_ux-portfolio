@@ -1,30 +1,47 @@
 import Link from 'next/link';
 import React from 'react';
+import { BiPhone } from 'react-icons/bi';
+import { BsPhone, BsTelegram } from 'react-icons/bs';
 import { FaLinkedinIn } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
 
 const Contact = () => {
   return (
-    <section>
-      <div>
+    <section className='mt-3'>
+      <h2 className='text-2xl font-bold mb-2 sticky z-50 top-0 py-2 bg-white'>
+        Contact Me
+      </h2>
+      <div className='flex flex-wrap items-center gap-2'>
         <Link
-          href='https://www.linkedin.com/in/habtesellasie'
-          target='_blank'
-          className='bg-[#0a66c2] hover:bg-[#0a66c2df] text-white px-4 py-2 flex items-center justify-center w-fit gap-2 rounded'
-        >
-          Follow me on <FaLinkedinIn />
-        </Link>
-        <Link
-          href='mailto:havecodesoft@gmail.com?subject=Hey%20Habte%2C%20I%20would%20like%20to%20tell%20you%20that%20you%20are%20hired!'
-          className='bg-zinc-800 hover:bg-zinc-700 text-white px-4 py-2 flex items-center justify-center w-fit gap-2 rounded'
-        >
-          Hire me
-        </Link>
-        <Link
+          className='hover:scale-[1.05] bg-zinc-200 hover:bg-zinc-100 hover:outline hover:outline-gray-300 hover:outline-offset-0 rounded transition size-10 flex items-center justify-center'
           href='https://t.me/haabbte'
           target='_blank'
-          className='bg-[#24A1DE] hover:bg-[#24a0deec] text-white px-4 py-2 flex items-center justify-center w-fit gap-2 rounded'
+          // className='bg-[#24A1DE] hover:bg-[#24a0deec] text-white px-4 py-2 flex items-center justify-center w-fit gap-2 rounded'
         >
-          Text Me
+          <BsTelegram size={23} fill='#24A1DE' />
+        </Link>
+        <Link
+          className='hover:scale-[1.05] bg-zinc-200 hover:bg-zinc-100 hover:outline hover:outline-gray-300 hover:outline-offset-0 rounded transition size-10 flex items-center justify-center'
+          href='mailto:havecodesoft@gmail.com'
+          // className='bg-zinc-800 hover:bg-zinc-700 text-white px-4 py-2 flex items-center justify-center w-fit gap-2 rounded'
+        >
+          <MdEmail size={28} />
+        </Link>
+        <Link
+          className='hover:scale-[1.05] bg-zinc-200 hover:bg-zinc-100 hover:outline hover:outline-gray-300 hover:outline-offset-0 rounded transition size-10 flex items-center justify-center'
+          href='https://www.linkedin.com/in/habtesellasie'
+          target='_blank'
+          // className='bg-[#0a66c2] hover:bg-[#0a66c2df] text-white px-4 py-2 flex items-center justify-center w-fit gap-2 rounded'
+        >
+          <FaLinkedinIn size={25} fill='#0a66c2' />
+        </Link>
+        <Link
+          className='hover:scale-[1.05] bg-zinc-200 hover:bg-zinc-100 hover:outline hover:outline-gray-300 hover:outline-offset-0 rounded transition size-10 flex items-center justify-center'
+          href='tel:0945596959'
+          target='_blank'
+          // className='bg-[#0a66c2] hover:bg-[#0a66c2df] text-white px-4 py-2 flex items-center justify-center w-fit gap-2 rounded'
+        >
+          <BsPhone strokeWidth={0.5} size={22} />
         </Link>
       </div>
     </section>

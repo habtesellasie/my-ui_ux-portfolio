@@ -66,31 +66,31 @@ export default function RootLayout({
       </head>
       <body className={`${playfairDisplay.className} ${dmSans.className}`}>
         {children}
-      </body>
-      <footer className='max-w-2xl mx-auto border-t-gray-500 border-t-[1px] mt-6 w-full py-4'>
-        <div className='flex justify-between sm:mx-2 mx-4 md:mx-0'>
-          <div className='flex gap-3'>
-            <Link
-              href={siteConfig.links.upwork}
-              target='_blank'
-              className='text-gray-500 underline-offset-2 font-bold underline hover:no-underline transition'
-            >
-              Upwork
-            </Link>
-            <Link
-              href={siteConfig.links.fiverr}
-              target='_blank'
-              className='text-gray-500 underline-offset-2 font-bold underline hover:no-underline transition'
-            >
-              Fiverr
-            </Link>
+        <footer className='max-w-2xl mx-auto border-t-gray-500 border-t-[1px] mt-6 w-full py-4'>
+          <div className='flex justify-between sm:mx-2 mx-4 md:mx-0'>
+            <div className='flex gap-3'>
+              <Link
+                href={siteConfig.links.upwork}
+                target='_blank'
+                className='text-gray-500 underline-offset-2 font-medium underline hover:no-underline transition'
+              >
+                Upwork
+              </Link>
+              <Link
+                href={siteConfig.links.fiverr}
+                target='_blank'
+                className='text-gray-500 underline-offset-2 font-medium underline hover:no-underline transition'
+              >
+                Fiverr
+              </Link>
+            </div>
+            <span>
+              &copy;{' '}
+              <span className='text-[15px]'>{new Date().getFullYear()}</span>
+            </span>
           </div>
-          <span>
-            &copy;{' '}
-            <span className='text-[15px]'>{new Date().getFullYear()}</span>
-          </span>
-        </div>
-      </footer>
+        </footer>
+      </body>
     </html>
   );
 }

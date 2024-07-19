@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import Certificates from './components/Certificates';
 import Skills from './components/Skills';
+import Contact from './components/Contact';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
             <Certificates />
             <Projects />
             <Skills />
+            <Contact />
           </section>
         </main>
       </div>
