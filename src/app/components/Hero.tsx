@@ -8,7 +8,7 @@ const Hero = () => {
         <div className='flex items-center gap-4'>
           <Link href='/'>
             <Image
-              src='/hero-img-square.JPG'
+              src='/hero-img-square.jpeg'
               alt='hero image'
               width={50}
               height={50}

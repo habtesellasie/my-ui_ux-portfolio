@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import Certificates from './components/Certificates';
+import Skills from './components/Skills';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
             <Hero />
             <Certificates />
             <Projects />
+            {/* <Skills /> */}
           </section>
         </main>
       </div>

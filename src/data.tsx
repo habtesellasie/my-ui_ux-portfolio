@@ -14,7 +14,7 @@ export const projects = [
       'UI',
       'UX',
       'Prototype',
-      'HI-FI',
+      'Hi-Fi',
       'Wireframe',
       'Figma',
       'Mobile Design',
@@ -30,7 +30,7 @@ export const projects = [
       'https://www.figma.com/design/D4Gz9UoBGuHRkvku8Dvfxc/NestQuest-Realty-Real-Estate-Design?node-id=1-5&t=zmgGAvBykCYOdb9p-1',
     project_thumbnail: '/project-images/nest-quest.png',
     case_study: '',
-    used_things: ['UI', 'UX', 'HI-FI', 'Prototype', 'Figma'],
+    used_things: ['UI', 'UX', 'Hi-Fi', 'Prototype', 'Figma'],
   },
   {
     name: 'Laba Media & Communications',
@@ -42,7 +42,7 @@ export const projects = [
       'https://www.figma.com/design/DEYODpDKRgrPmcrFuKdV81/LABA-MEDIA-WEBSITE-DESIGN?node-id=68-9&t=RhJXU8jdfDDtzsfn-1',
     project_thumbnail: '/project-images/laba-media.png',
     case_study: '',
-    used_things: ['UI', 'UX', 'Prototype', 'HI-FI', 'Figma', 'Mobile Design'],
+    used_things: ['UI', 'UX', 'Prototype', 'Hi-Fi', 'Figma', 'Mobile Design'],
   },
   {
     name: 'Interactive Data Visualization Dashboard',
@@ -54,7 +54,7 @@ export const projects = [
       'https://www.figma.com/design/F4cQ5RcqoBQEOdoKISHMuq/Interactive-Data-Visualization-Dashboard?node-id=0-1&t=NP0eklQwTlY79Xii-1',
     project_thumbnail: '/project-images/interactive-dashboard.png',
     case_study: '',
-    used_things: ['UI', 'UX', 'Prototype', 'HI-FI', 'Figma'],
+    used_things: ['UI', 'UX', 'Prototype', 'Hi-Fi', 'Figma'],
   },
   {
     name: 'Portfolio design',
@@ -66,7 +66,7 @@ export const projects = [
       'https://www.figma.com/design/U5cE6g3Yyr9e3Ysd5OkyTu/Adonias-Website-Design?node-id=54721-25132&t=ptWix1gvFsRjZwze-1',
     project_thumbnail: '/project-images/portfolio-design-one.png',
     case_study: '',
-    used_things: ['UI', 'UX', 'Prototype', 'HI-FI', 'Figma', 'Mobile Design'],
+    used_things: ['UI', 'UX', 'Prototype', 'Hi-Fi', 'Figma', 'Mobile Design'],
   },
   {
     name: 'Portfolio design',
@@ -78,7 +78,7 @@ export const projects = [
       'https://www.figma.com/design/JM4BKF2AhriZPZd1nxQYaF/TANCHIWEDIA-WEBSITE-DESIGN?node-id=49-2354&t=ueSEJF1Mh72ts5b9-1',
     project_thumbnail: '/project-images/portfolio-design-two.png',
     case_study: '',
-    used_things: ['UI', 'UX', 'Prototype', 'HI-FI', 'Figma', 'Mobile Design'],
+    used_things: ['UI', 'UX', 'Prototype', 'Hi-Fi', 'Figma', 'Mobile Design'],
   },
   {
     name: 'Sales Mobile App',
@@ -90,7 +90,7 @@ export const projects = [
       'https://www.figma.com/design/TQpbObTvBtBlvm1V71STRx/Sales-App?node-id=0-1&t=pcj86MXVxFvS5eHy-1',
     project_thumbnail: '/project-images/sales-app.png',
     case_study: '',
-    used_things: ['UI', 'UX', 'Prototype', 'HI-FI', 'Figma', 'Mobile Design'],
+    used_things: ['UI', 'UX', 'Prototype', 'Hi-Fi', 'Figma', 'Mobile Design'],
   },
 ];
 
@@ -127,5 +127,19 @@ export const certificates = [
     verification_link:
       'https://coursera.org/verify/professional-cert/CU2LECUJTT7G',
     image: '/certificates/ibm-front-end-development.png',
+  },
+];
+
+export const skills = [
+  {
+    softSkill: [
+      'User Interface',
+      'User Experience',
+      'Hi-Fi',
+      'Lo-Fi',
+      'Prototyping',
+      'Wireframing',
+      'User Research',
+    ],
   },
 ];
