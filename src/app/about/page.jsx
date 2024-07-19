@@ -115,7 +115,7 @@ const About = () => {
           <Link
             href='/ui-ux_design_resume.pdf'
             target='_blank'
-            className='mt-4 border hover:bg-transparent bg-zinc-800 text-white transition hover:text-black px-4 py-2 flex items-center justify-center w-fit gap-2 rounded'
+            className='mt-4 mb-2 border hover:bg-transparent bg-zinc-800 text-white transition hover:text-black px-4 py-2 flex items-center justify-center w-fit gap-2 rounded'
           >
             My Resume
           </Link>

@@ -1,8 +1,32 @@
+'use client';
+
 import { certificates } from '@/data';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { CgLink } from 'react-icons/cg';
+import { motion } from 'framer-motion';
+
+const projectsContainerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const projectsChildVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      ease: 'ease',
+      duration: 0.5,
+    },
+  },
+};
 
 const Certificates = () => {
   return (
@@ -22,10 +46,17 @@ const Certificates = () => {
         .
       </p>
 
-      <div className='grid sm:grid-cols-2 gap-4 sm:gap-2'>
+      <motion.div
+        className='grid sm:grid-cols-2 gap-4 sm:gap-2'
+        variants={projectsContainerVariants}
+        initial='hidden'
+        whileInView='visible'
+        viewport={{ once: true }}
+      >
         {certificates.map((certificate, certIndex) => {
           return (
-            <div
+            <motion.div
+              variants={projectsChildVariants}
               key={certIndex}
               className='transition bg-gray-100 border-2 border-gray-400 rounded-lg max-sm:w-full'
             >
@@ -55,10 +86,10 @@ const Certificates = () => {
                   verification link <CgLink size={20} />
                 </Link>
               </div>
-            </div>
+            </motion.div>
           );
         })}
-      </div>
+      </motion.div>
     </section>
   );
 };

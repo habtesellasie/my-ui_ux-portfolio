@@ -1,11 +1,30 @@
+'use client';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
+
+const projectsChildVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      ease: 'easeInOut',
+      duration: 0.5,
+    },
+  },
+};
 
 const Hero = () => {
   return (
     <>
       <header className='container mx-auto'>
-        <div className='flex items-center gap-4'>
+        <motion.div
+          className='flex items-center gap-4'
+          initial={{ opacity: 0, x: -48 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
           <Link href='/'>
             <Image
               src='/hero-img-square.jpeg'
@@ -19,9 +38,15 @@ const Hero = () => {
             <h1 className='text-2xl font-bold'>Habtesellasie Fissha</h1>
             <p className='text-gray-500 font-medium'>UI/UX Designer</p>
           </div>
-        </div>
+        </motion.div>
 
-        <div className='my-4'>
+        <motion.div
+          className='my-4'
+          initial={{ opacity: 0, x: 48 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
           <h2 className='mb-4 font-bold'>Welcome to My UI/UX Portfolio</h2>
           <p className='text-gray-500 text-pretty'>
             I&apos;m a UI/UX designer dedicated to creating intuitive and
@@ -45,22 +70,36 @@ const Hero = () => {
               appealing and user friendly designs.
             </span>
           </p>
-        </div>
+        </motion.div>
         <div className='flex gap-2'>
-          <Link
-            href='https://t.me/haabbte'
-            target='_blank'
-            className='bg-zinc-800 hover:bg-zinc-700 text-white px-4 py-2 flex items-center justify-center w-fit gap-2 rounded'
+          <motion.div
+            initial={{ opacity: 0, scale: 1.2 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
           >
-            Hire Me
-          </Link>
-          <Link
-            href='/ui-ux_design_resume.pdf'
-            target='_blank'
-            className='border bg-transparent hover:bg-zinc-800 hover:text-white transition text-black px-4 py-2 flex items-center justify-center w-fit gap-2 rounded'
+            <Link
+              href='https://t.me/haabbte'
+              target='_blank'
+              className='bg-zinc-800 hover:bg-zinc-700 text-white px-4 py-2 flex items-center justify-center w-fit gap-2 rounded'
+            >
+              Hire Me
+            </Link>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
           >
-            My Resume
-          </Link>
+            <Link
+              href='/ui-ux_design_resume.pdf'
+              target='_blank'
+              className='border bg-transparent hover:bg-zinc-800 hover:text-white transition text-black px-4 py-2 flex items-center justify-center w-fit gap-2 rounded'
+            >
+              My Resume
+            </Link>
+          </motion.div>
         </div>
       </header>
     </>
