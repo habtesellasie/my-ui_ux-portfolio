@@ -52,7 +52,7 @@ const About = () => {
               src='/hero-img-transparent-large.png'
               alt='hero image'
               width={189}
-              height={50}
+              height={346}
               className='small:block hidden'
             />
           </section>
@@ -84,14 +84,14 @@ const About = () => {
             >
               phone calls
             </Link>{' '}
-            because only when I am not busy is when anyone can find me. but
+            because only when I am not busy can anyone find me. However,
             I&apos;m known to be active on my{' '}
             <Link
               href={siteConfig.links.telegram}
               target='_blank'
               className='text-gray-700 font-medium hover:underline'
             >
-              telegram.
+              Telegram.
             </Link>{' '}
             I&apos;m also active on{' '}
             <Link
@@ -99,17 +99,17 @@ const About = () => {
               target='_blank'
               className='text-gray-700 font-medium hover:underline'
             >
-              linkedin.
+              LinkedIn.
             </Link>{' '}
-            I regularly post things there. I prefere someone to{' '}
+            I regularly post things there. I prefer someone to{' '}
             <Link
-              href={siteConfig.links.email}
+              href={`mailto:${siteConfig.links.email}`}
               target='_blank'
               className='text-gray-700 font-medium hover:underline'
             >
               email
             </Link>{' '}
-            me about work rather than texting me.
+            me about work rather than to DM me.
           </p>
 
           <Link
