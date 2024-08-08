@@ -42,9 +42,12 @@ const About = () => {
                 excited to learn new things and keep up with the latest trends
                 in the industry.
                 <span className='inline-block py-2'>
-                  Spoiler alert: I also love coding! One of the reasons I&apos;m
-                  so into designing is because I can bring my designs to life
-                  with my frontend development skills.
+                  Spoiler alert: I also love{' '}
+                  <Link href='https://habte.netlify.app' target='_blank'>
+                    coding!
+                  </Link>{' '}
+                  One of the reasons I&apos;m so into designing is because I can
+                  bring my designs to life with my frontend development skills.
                 </span>
               </p>
             </div>
